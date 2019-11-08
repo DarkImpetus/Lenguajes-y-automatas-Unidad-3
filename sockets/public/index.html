@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edo's Chat </title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Edo's Messages</h1>
+    <div id="messages"></div>
+    <hr>
+    <form onsubmit="return addMessage(this)">
+
+        <input type="text" id="username" placeholder="Tu Nombre">
+        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar!">
+    </form>
+</body>
+
+</html>
